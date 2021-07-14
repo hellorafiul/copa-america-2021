@@ -23,7 +23,21 @@ body{
   transform: translateY(-5px);
   box-shadow: none;
   }
-
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: #0A0826;
+}
+.btn-pink > a{
+  text-decoration: none;
+  color: #fff;
+}
+.arrow{
+  padding-left: 10px;
+}
 h2{
     font-family: Poppins;
     font-style: normal;
@@ -45,7 +59,7 @@ p{
   line-height: 26px;
 }
 /* Header Area CSS */
-.header{
+.header, .highlight{
   background-color: #2D25A0;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -54,20 +68,9 @@ p{
   align-content: center;
 }
 .header-left h1{
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 64px;
-line-height: 80px;
-color: #FFFFFF;
+  color: #FFFFFF;
 }
-.btn-pink > a{
-  text-decoration: none;
-  color: #fff;
-}
-.arrow{
-  padding-left: 10px;
-}
+
 .header-img img{
   width: 556px;
   transition: transform 1s ease-in;
@@ -101,4 +104,28 @@ transition: transform 1s, opacity 1s;
 .player img:hover{
 opacity: .9;
 transform: scale(.95);
+}
+
+/* Highlights CSS */
+
+.highlight{
+background-color: #fff;
+padding: 0 15%;
+justify-items: end;
+}
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+}
+.highlight-left p {
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+.highlight-img img{
+  width: 567px;
+  transition: transform .6s ease-in-out;
+}
+.highlight-img img:hover{
+  transform: scale(1.1);
+  opacity: .9;
 }
