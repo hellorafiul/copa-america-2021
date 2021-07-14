@@ -1,0 +1,58 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* Common CSS */
+body{
+  margin: 0;
+  padding: 0;
+}
+.btn-pink {
+  padding: 10px 24px;
+  background: #E02C6D;
+  color: #FFFFFF;
+  width: 168px;
+  height: 44px;
+  left: 156px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 14px 18px 43px -14px #E0E;
+  transition: transform 0.5s;
+}
+.btn-pink:hover{
+  Background: #df2569;
+  transform: translateY(-5px);
+  box-shadow: none;
+  }
+
+/* Header Area CSS */
+.header{
+  background-color: #2D25A0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 677px;
+  justify-items: center;
+  align-content: center;
+}
+.header-left h1{
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 80px;
+color: #FFFFFF;
+}
+.btn-pink > a{
+  text-decoration: none;
+  color: #fff;
+}
+.arrow{
+  padding-left: 10px;
+}
+.header-img img{
+  width: 556px;
+  transition: transform 1s ease-in;
+}
+.header-img img:hover{
+  width: 556px;
+  transform: scale(1.1);
+}
