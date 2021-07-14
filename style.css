@@ -290,7 +290,7 @@ h1 {
 /* Media Query For All Small Devices  */
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
   .header-left h1 {
     font-size: 35px;
     line-height: 43px;
