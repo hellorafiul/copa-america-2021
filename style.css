@@ -148,3 +148,41 @@ h1 {
 .follower-box h2:hover {
   color: #2D25A0;
 }
+
+/* Newsletter CSS */
+.container {
+  margin: 5% 15%;
+  justify-content: center;
+  display: grid;
+}
+.container h2{
+  text-align: center;
+  color: #8a8383;
+  font-size: 40px;
+  line-height: 50px;
+  cursor:auto;
+}
+.form-area {
+  display: flex;
+  justify-content: center;
+}
+.subscribe form input[type='email'] {
+  width: 45%;
+  margin-right: 5%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 2px solid #df2569;
+  font-size: 18px;
+}
+.subscribe form input[type='submit'] {
+  width: 30%;
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #df4a80, #ff005d);
+  color: #fff;
+  box-shadow: 0px 4px 13px #df2569;
+  letter-spacing: 2px;
+  border: none;
+  font-size: 18px;
+}
