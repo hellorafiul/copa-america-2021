@@ -218,3 +218,107 @@ h1 {
   font-size: 18px;
   color: #000000;
 }
+
+/*****************/
+/* Media Query CSS */
+/*****************/
+
+
+
+
+
+@media screen and (max-width:688px) {
+  .header, .highlight {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+}
+.header-left h1, .highlight-left h1 {
+  font-size: 35px;
+  line-height: 45px;
+}
+.header-img img {
+  width: 100%;
+  transition: transform .5s ease-in;
+  padding-top: 70px;
+}
+.header-img img:hover{
+  width: 100%;
+  transform: scale(.95);
+}
+.players-list {
+  grid-template-columns: 1fr;
+  padding: 5% 8%;
+}
+
+.highlight{
+  margin: -5% 8%;
+}
+.highlight-left{
+  padding-bottom: 15%;
+}
+.highlight-img img {
+  width: 100%;
+}
+
+.follower-container {
+  flex-direction: column;
+  text-align: center;
+  margin: 3% 8%;
+}
+.subscribe h2{
+  font-size: 29px;
+}
+.subscribe form input[type='email'], .subscribe form input[type='submit'] {
+  width: 45%;
+  font-size: 16px;
+}
+.footer-img img {
+  width: 100%;
+}
+
+}
+
+
+
+/* Media Query For All Small Devices  */
+
+
+@media screen and (max-width:414px){
+.header-left h1 {
+  font-size: 35px;
+  line-height: 43px;
+}
+.highlight {
+  margin:0;
+}
+.highlight-left h1 {
+  font-size: 30px;
+  line-height: 42px;
+  padding-bottom: 15px;
+}
+.follower-container {
+  margin: 10% 0%;
+}
+.subscribe {
+  padding-bottom: 10px;
+}
+.container {
+  margin: 5% 5%;
+}
+
+.subscribe h2 {
+  font-size: 19px;
+}
+.subscribe form input[type='email'] {
+  width: 60%;
+  font-size: 15px;
+}
+
+.subscribe form input[type='submit'] {
+  width: 40%;
+  padding: 0;
+}
+.footer-img img {
+  width: 90%;
+}
+}
