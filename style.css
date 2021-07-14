@@ -103,7 +103,7 @@ transition: transform 1s, opacity 1s;
 }
 .player img:hover{
 opacity: .9;
-transform: scale(.95);
+transform: scale(.95) rotateZ(-5deg);
 }
 
 /* Highlights CSS */
@@ -223,18 +223,16 @@ h1 {
 /* Media Query CSS */
 /*****************/
 
+  /* Media tablet */
 
-
-
-
-@media screen and (max-width:688px) {
+@media screen and (max-width:1024px) {
   .header, .highlight {
     grid-template-columns: 1fr;
     margin-bottom: 40px;
 }
 .header-left h1, .highlight-left h1 {
-  font-size: 35px;
-  line-height: 45px;
+  font-size: 64px;
+  line-height: 80px;
 }
 .header-img img {
   width: 100%;
@@ -246,12 +244,13 @@ h1 {
   transform: scale(.95);
 }
 .players-list {
-  grid-template-columns: 1fr;
-  padding: 5% 8%;
+  grid-template-columns: 1fr 1fr;
+  padding: 5% 3%;
 }
 
 .highlight{
-  margin: -5% 8%;
+  margin: 0;
+  padding: 5% 8%;
 }
 .highlight-left{
   padding-bottom: 15%;
@@ -265,60 +264,72 @@ h1 {
   text-align: center;
   margin: 3% 8%;
 }
-.subscribe h2{
-  font-size: 29px;
+.container {
+  margin: 15% 7%;
+}
+.subscribe h2 {
+  font-size: 38px;
+}
+.form-area {
+  margin-top: 20px;
 }
 .subscribe form input[type='email'], .subscribe form input[type='submit'] {
   width: 45%;
   font-size: 16px;
 }
 .footer-img img {
-  width: 100%;
-}
+  width: 95%;
+} 
 
 }
-
+.copyright p {
+  font-size: 22px;
+}
 
 
 /* Media Query For All Small Devices  */
 
 
-@media screen and (max-width:414px){
-.header-left h1 {
-  font-size: 35px;
-  line-height: 43px;
-}
-.highlight {
-  margin:0;
-}
-.highlight-left h1 {
-  font-size: 30px;
-  line-height: 42px;
-  padding-bottom: 15px;
-}
-.follower-container {
-  margin: 10% 0%;
-}
-.subscribe {
-  padding-bottom: 10px;
-}
-.container {
-  margin: 5% 5%;
-}
-
-.subscribe h2 {
-  font-size: 19px;
-}
-.subscribe form input[type='email'] {
-  width: 60%;
-  font-size: 15px;
-}
-
-.subscribe form input[type='submit'] {
-  width: 40%;
-  padding: 0;
-}
-.footer-img img {
-  width: 90%;
-}
-}
+@media screen and (max-width:768px){
+  .header-left h1 {
+    font-size: 35px;
+    line-height: 43px;
+  }
+  .players-list {
+    grid-template-columns: 1fr;
+    padding: 5% 3%;
+  }
+  .highlight {
+    margin:0;
+  }
+  .highlight-left h1 {
+    font-size: 30px;
+    line-height: 42px;
+    padding-bottom: 15px;
+  }
+  .follower-container {
+    margin: 10% 0%;
+  }
+  .subscribe {
+    padding-bottom: 10px;
+  }
+  .container {
+    margin: 5% 5%;
+  }
+  
+  .subscribe h2 {
+    font-size: 19px;
+  }
+  .subscribe form input[type='email'] {
+    width: 60%;
+    font-size: 15px;
+  }
+  
+  .subscribe form input[type='submit'] {
+    width: 40%;
+    padding: 0;
+  }
+  .footer-img img {
+    width: 90%;
+  }
+  }
