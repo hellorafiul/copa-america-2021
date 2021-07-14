@@ -149,6 +149,8 @@ h1 {
   color: #2D25A0;
 }
 
+
+
 /* Newsletter CSS */
 .container {
   margin: 5% 15%;
@@ -185,4 +187,34 @@ h1 {
   letter-spacing: 2px;
   border: none;
   font-size: 18px;
+}
+
+/* Footer CSS */
+
+.footer{
+  display: grid;
+  justify-content: center;
+  margin-top: 7%;
+}
+.footer-img img{
+  width: 483px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.social img{
+  width: 32px;
+  margin-right: 14px;
+  transition: transform .3s ease-in-out;
+}
+.social img:hover{
+ transform: translateY(-5px); 
+}
+.copyright p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 18px;
+  color: #000000;
 }
